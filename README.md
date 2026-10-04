@@ -39,16 +39,16 @@ Paste your GitHub repository URL here.
 # Commit 3: Task 2 (sumEvenNumbers)
 
 ## Which tests in Task2Test were failing before your fix?
--
+- The testSumEvenNumbers, testOddNumbers, and testEmpty tests were affected by problems in the method.
 
 ## What was the issue in the code?
--
+- The sum was initialized to 1 instead of 0, and the loop used `i <= values.length`, which could attempt to access an array element beyond the last valid index.
 
 ## What change did you make to fix it?
--
+- I changed the initial value of sum to 0 and changed the loop condition from `i <= values.length` to `i < values.length`.
 
 ## How did the tests help guide your fix?
--
+- The tests showed that only even numbers should be added, an array containing only odd numbers should return 0, and an empty array should also return 0.
 
 ---
 
