@@ -71,26 +71,26 @@ https://github.com/rianblue141/CMSC-115-Final
 # Overall Reflection
 
 ## Which task was the easiest to fix? Why?
--
+- Task 1 was the easiest. The tests used the boundary scores 90, 80, and 79, so it was clear that the comparisons needed to be `>=` instead of `>`.
 
 ## Which task was the most difficult? Why?
--
+- Task 3 was the most difficult. The method only showed a loop that counted upward, and the reverse behavior was not stated in the code. I had to use the expected value of 15 from sumRange(5, 1) to see that the method should add every number from the higher endpoint down to the lower one.
 
 ## How did Git help you track your progress through the debugging process?
--
+- Each commit saved a working version of the project after one fix. I could look back at the history and see the code and notes from Task 1, Task 2, and Task 3 separately.
 
 ## Why is it important to make small, frequent commits when debugging code?
--
+- A small commit is easier to understand and easier to undo if a change causes a new problem. Frequent commits also show the order of the fixes instead of hiding every change in one large commit.
 
 ## What did you learn about using JUnit tests to guide debugging?
--
+- The tests showed the expected result for each case, including boundary values. When a test failed, I could compare the expected value with what the method returned and use that to find the logical error.
 
 ---
 
 # Commit 5: Final Reflection
 
 ## What did you complete or update before making this final commit?
--
+- I finished the Overall Reflection section and checked that my name, GitHub repository URL, and the Task 1, Task 2, and Task 3 reflections were all filled in.
 
 ## Why is it useful to document your work after completing a programming task?
--
+- Writing down the bug, the change, and the test results makes it easier to remember why the code was changed. It also leaves a record of the debugging process that can be reviewed later.
