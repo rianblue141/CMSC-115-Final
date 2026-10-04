@@ -4,7 +4,7 @@
 Rian Blauvelt
 
 ## GitHub Repository URL
-Paste your GitHub repository URL here.
+https://github.com/rianblue141/CMSC-115-Final
 
 ---
 
@@ -55,16 +55,16 @@ Paste your GitHub repository URL here.
 # Commit 4: Task 3 (sumRange)
 
 ## Which tests in Task3Test were failing before your fix?
--
+- The testSumRangeReverseOrder test failed. sumRange(5, 1) returned 0 instead of 15. The normal order and single value tests already passed.
 
 ## What was the issue in the code?
--
+- The loop only counted upward from start to end. When start was greater than end, the condition `i <= end` was never true, so the method returned 0.
 
 ## What change did you make to fix it?
--
+- I added a second loop for the reverse case. If start is less than or equal to end, the method counts upward and includes both ends. If start is greater than end, it counts downward from start to end and includes both ends.
 
 ## How did the tests help guide your fix?
--
+- testSumRangeNormalOrder expected 6 for the range 1 to 3, which is 1 + 2 + 3. testSumRangeReverseOrder expected 15 for 5 to 1, which is 5 + 4 + 3 + 2 + 1. testSumRangeSingleValue expected 7 when both arguments are 7. Those results showed that both endpoints are included and that the method has to work when the first number is larger than the second.
 
 ---
 
