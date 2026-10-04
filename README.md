@@ -1,7 +1,7 @@
 # Lab Reflection: Git Version Control + Debugging (BuggyProgram)
 
 ## Student Name
-Enter your name here.
+Rian Blauvelt
 
 ## GitHub Repository URL
 Paste your GitHub repository URL here.
@@ -11,26 +11,28 @@ Paste your GitHub repository URL here.
 # Commit 1: Initial Commit
 
 ## What did you include in this commit?
--
+- The original BuggyProgram.java containing the three buggy methods.
+- Task1Test.java, Task2Test.java, and Task3Test.java.
+- The original README.md file.
 
 ## What was the purpose of this commit?
--
+- The purpose was to establish a baseline version of the project before making any changes.
 
 ---
 
 # Commit 2: Task 1 (getGrade)
 
 ## Which tests in Task1Test were failing before your fix?
--
+- The testGrades and testEdges tests had failures because the score boundaries were incorrect.
 
 ## What was the issue in the code?
--
+- The original code used `score > 90` and `score > 80`, which caused scores of exactly 90 and 80 to be placed in the wrong categories.
 
 ## What change did you make to fix it?
--
+- I changed the conditions to use `score >= 90` for "Exceeds" and `score >= 80` for "Meets."
 
 ## How did the tests help guide your fix?
--
+- The tests included boundary values of 90, 80, and 79. These values showed that 90 should be "Exceeds," 80 should be "Meets," and 79 should be "Does Not Meet."
 
 ---
 
